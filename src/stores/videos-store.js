@@ -1,0 +1,92 @@
+import { defineStore } from "pinia";
+
+export const useVideosStore = defineStore("videosStore", {
+  state: () => ({
+    videos: [
+      {
+        title: "Amazing Views of Nature",
+        userIcon: "https://picsum.photos/40/40",
+        videoImage: "https://picsum.photos/400/600",
+        userName: "Nature Lover",
+        views: "23k",
+        uploadDate: "2 weeks",
+      },
+      {
+        title: "Cooking Masterclass: Italian Cuisine",
+        userIcon: "https://picsum.photos/40/40",
+        videoImage: "https://picsum.photos/400/600",
+        userName: "Chef Giovanni",
+        views: "18k",
+        uploadDate: "3 weeks",
+      },
+      {
+        title: "Guitar Tutorial: Learn to Play Like a Pro",
+        userIcon: "https://picsum.photos/40/40",
+        videoImage: "https://picsum.photos/400/600",
+        userName: "Guitar Guru",
+        views: "35k",
+        uploadDate: "1 week",
+      },
+      {
+        title: "Travel Vlog: Exploring Hidden Gems",
+        userIcon: "https://picsum.photos/40/40",
+        videoImage: "https://picsum.photos/400/600",
+        userName: "Wanderlust Adventures",
+        views: "42k",
+        uploadDate: "4 days",
+      },
+      {
+        title: "Fitness Tips: Get in Shape Fast",
+        userIcon: "https://picsum.photos/40/40",
+        videoImage: "https://picsum.photos/400/600",
+        userName: "FitFam",
+        views: "50k",
+        uploadDate: "5 days",
+      },
+      {
+        title: "Art Class: Painting Techniques for Beginners",
+        userIcon: "https://picsum.photos/40/40",
+        videoImage: "https://picsum.photos/400/600",
+        userName: "Art Enthusiast",
+        views: "15k",
+        uploadDate: "2 weeks",
+      },
+      {
+        title: "Technology Review: Latest Gadgets Unboxed",
+        userIcon: "https://picsum.photos/40/40",
+        videoImage: "https://picsum.photos/400/600",
+        userName: "Tech Junkie",
+        views: "28k",
+        uploadDate: "1 week",
+      },
+      {
+        title: "Music Production Tips: Master Your Sound",
+        userIcon: "https://picsum.photos/40/40",
+        videoImage: "https://picsum.photos/400/600",
+        userName: "Music Maven",
+        views: "20k",
+        uploadDate: "3 weeks",
+      },
+      {
+        title: "DIY Crafts: Creative Projects to Try",
+        userIcon: "https://picsum.photos/40/40",
+        videoImage: "https://picsum.photos/400/600",
+        userName: "Crafty Creations",
+        views: "12k",
+        uploadDate: "2 weeks",
+      },
+      {
+        title: "Funny Cat Videos: Guaranteed to Make You Laugh",
+        userIcon: "https://picsum.photos/40/40",
+        videoImage: "https://picsum.photos/400/600",
+        userName: "Cat Lover",
+        views: "65k",
+        uploadDate: "6 days",
+      },
+    ],
+  }),
+  getters: {
+    videosHome: (state) => state.videos,
+  },
+  actions: {},
+});

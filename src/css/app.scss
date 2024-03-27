@@ -1,1 +1,17 @@
 // app global css in SCSS form
+
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+.text-muted {
+  font-size: 0.875rem;
+  font-weight: 500;
+  overflow: hidden;
+  display: block;
+  max-height: 4rem;
+  text-overflow: ellipsis;
+  white-space: normal;
+  display: flexbox;
+  color: #606060;
+}
